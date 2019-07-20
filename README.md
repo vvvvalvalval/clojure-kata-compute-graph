@@ -8,7 +8,7 @@ See the tests in `[compute-graph.core-test](./test/compute_graph/core_test.clj)`
 
 ## Assignment
 
-Implement the [`#'compute-graph.core/compute`](./src/compute_graph/core.clj) function. You may of course define other functions outside of this one, to help with the implementation!
+Implement the [`compute-graph.core/compute`](./src/compute_graph/core.clj) function. You may of course define other functions outside of this one, to help with the implementation!
 
 We suggest proceeding with the following steps:
 
