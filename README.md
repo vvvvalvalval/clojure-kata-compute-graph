@@ -4,11 +4,11 @@ A Clojure 'kata': implementing a library for expressing computations as a depend
 
 ## Objective
 
-See the tests in `[compute-graph.core-test](./test/compute_graph/core_test.clj)` for examples of the desired behaviour.
+See the tests in [`compute-graph.core-test`](./test/compute_graph/core_test.clj) for examples of the desired behaviour.
 
 ## Assignment
 
-Implement the [`compute-graph.core/compute`](./src/compute_graph/core.clj) function. You may of course define other functions outside of this one, to help with the implementation!
+Implement the [`#'compute-graph.core/compute`](./src/compute_graph/core.clj) function. You may of course define other functions outside of this one, to help with the implementation!
 
 We suggest proceeding with the following steps:
 
