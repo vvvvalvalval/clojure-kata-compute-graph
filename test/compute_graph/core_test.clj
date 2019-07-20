@@ -69,5 +69,15 @@
               [:mystats/cardinality :mystats/average :mystats/variance])
             :should-have-thrown
             (catch Throwable _ex
+              :did-throw)))))
+  (testing "Will throw an error if a dependency cycle is detected"
+    (is (= :did-throw
+          (try
+            (cg/compute {:x {:deps [:y :z] :fn +}
+                         :y {:deps [:x :z] :fn +}}
+              {:z 42}
+              [:x])
+            :should-have-thrown
+            (catch Throwable _ex
               :did-throw))))))
 
